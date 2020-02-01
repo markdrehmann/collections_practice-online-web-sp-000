@@ -22,13 +22,11 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  new_array = []
-  array.each do |word|
-    letter_array = word.split
+  array.collect do |word|
+    letter_array = word.split ""
     letter_array[2] = "$"
-    new_array << letter_array.join
+    letter_array.join
   end
-  new_array
 end
 
 def find_a(array)
