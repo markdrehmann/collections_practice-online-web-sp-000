@@ -7,8 +7,11 @@ def sort_array_desc(array)
 end
 
 def sort_array_char_count(array)
-  new_array = array.collect do |value|
-    value.length
+  array.sort do |a, b|
+    a.length <=> b.length
   end
-  new_array.sort
+  # new_array = array.collect do |value|
+  #   value.length
+  # end
+  # new_array.sort
 end
