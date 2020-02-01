@@ -21,14 +21,13 @@ def reverse_array(array)
   array.reverse
 end
 
-# def kesha_maker(array)
-#   array.each do |string|
-#     string.each_char do |letter|
-#       if #it's 3rd, replace with $
-#       end
-#     end
-#   end
-# end
+def kesha_maker(array)
+  array.collect do |word|
+    letter_array = word.split
+    letter_array[2] = "$"
+    letter_array.join
+  end
+end
 
 def find_a(array)
   array.select do |string|
