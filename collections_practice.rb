@@ -10,8 +10,8 @@ def sort_array_char_count(array)
   array.sort do |a, b|
     a.length <=> b.length
   end
-  # new_array = array.collect do |value|
-  #   value.length
-  # end
-  # new_array.sort
+end
+
+def swap_elements(array)
+  array[1] <=> array[2]
 end
